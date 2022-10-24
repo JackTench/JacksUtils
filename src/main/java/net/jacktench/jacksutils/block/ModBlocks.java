@@ -1,6 +1,7 @@
 package net.jacktench.jacksutils.block;
 
 import net.jacktench.jacksutils.JacksUtils;
+import net.jacktench.jacksutils.block.custom.BlockSpeedStone;
 import net.jacktench.jacksutils.item.ModCreativeModeTabs;
 import net.jacktench.jacksutils.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -23,6 +24,9 @@ public class ModBlocks {
 
     // Boring Test Block
     public static final RegistryObject<Block> testBlock = registerBlock("testblock", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.modTab);
+
+    // speed block
+    public static final RegistryObject<Block> speedStone = registerBlock("speedstone", () -> new BlockSpeedStone(BlockBehaviour.Properties.of(Material.STONE).strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTabs.modTab);
 
     // Helper function for registering blocks.
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
