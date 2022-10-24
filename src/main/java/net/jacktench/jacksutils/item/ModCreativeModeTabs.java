@@ -14,12 +14,4 @@ public class ModCreativeModeTabs {
         }
     };
 
-    // Temporary creative tab for junk.
-    public static final CreativeModeTab junkTab = new CreativeModeTab("jacksjunktab") {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.testItem.get());
-        }
-    };
-
 }

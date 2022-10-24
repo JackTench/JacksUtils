@@ -15,10 +15,6 @@ public class ModItems {
     // Register for items from Jack's Utilities.
     public static final DeferredRegister<Item> itemRegister = DeferredRegister.create(ForgeRegistries.ITEMS, JacksUtils.modid);
 
-    // Boring Test Item. Will be deleted soon.
-    public static final RegistryObject<Item> testItem = itemRegister.register("testitem",
-            () -> new Item(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.junkTab)));
-
     // Coin
     public static final RegistryObject<Item> coin = itemRegister.register("coin",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).fireResistant().tab(ModCreativeModeTabs.modTab)));
