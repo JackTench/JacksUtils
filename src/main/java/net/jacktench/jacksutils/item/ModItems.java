@@ -2,6 +2,7 @@ package net.jacktench.jacksutils.item;
 
 import net.jacktench.jacksutils.JacksUtils;
 import net.jacktench.jacksutils.item.custom.ItemTinyCoal;
+import net.jacktench.jacksutils.item.custom.ItemTinyCoke;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,9 +18,10 @@ public class ModItems {
     public static final RegistryObject<Item> testItem = itemRegister.register("testitem",
             () -> new Item(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.modTab)));
 
-    // Tiny Coal and Tiny Charcoal
+    // Tiny Coal, Charcoal and Coal Coke.
     public static final RegistryObject<Item> tinyCoal = itemRegister.register("tinycoal", () -> new ItemTinyCoal(new Item.Properties().tab(ModCreativeModeTabs.modTab)));
     public static final RegistryObject<Item> tinyCharcoal = itemRegister.register("tinycharcoal", () -> new ItemTinyCoal(new Item.Properties().tab(ModCreativeModeTabs.modTab)));
+    public static final RegistryObject<Item> tinyCoke = itemRegister.register("tinycoke", () -> new ItemTinyCoke(new Item.Properties().tab(ModCreativeModeTabs.modTab)));
 
     // Called in the main class of the mod.
     public static void register(IEventBus eventBus) {
