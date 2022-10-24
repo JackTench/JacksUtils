@@ -21,8 +21,8 @@ public class BlockSpeedStone extends Block {
 
         // Checks if entity that steps on block is a living entity, aka a mob or player.
         if(entity instanceof LivingEntity livingEntity) {
-            // Applies a buff to movement speed for 60 ticks, or 3 seconds.
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60));
+            // Applies a buff to movement speed for 30 ticks, or 1.5 seconds.
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 30));
         }
 
         super.stepOn(level, pos, state, entity);
