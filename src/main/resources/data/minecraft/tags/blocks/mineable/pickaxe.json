@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "jacksutils:swiftstone"
+    "jacksutils:swiftstone",
+    "jacksutils:hotcoals"
   ]
 }

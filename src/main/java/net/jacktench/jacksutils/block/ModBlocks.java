@@ -1,6 +1,7 @@
 package net.jacktench.jacksutils.block;
 
 import net.jacktench.jacksutils.JacksUtils;
+import net.jacktench.jacksutils.block.custom.BlockHotCoals;
 import net.jacktench.jacksutils.block.custom.BlockSwiftStone;
 import net.jacktench.jacksutils.item.ModCreativeModeTabs;
 import net.jacktench.jacksutils.item.ModItems;
@@ -27,6 +28,9 @@ public class ModBlocks {
 
     // Swift Stone
     public static final RegistryObject<Block> swiftStone = registerBlock("swiftstone", () -> new BlockSwiftStone(BlockBehaviour.Properties.of(Material.STONE).strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTabs.modTab);
+
+    // Hot Coals
+    public static final RegistryObject<Block> hotCoals = registerBlock("hotcoals", () -> new BlockHotCoals(BlockBehaviour.Properties.of(Material.STONE).strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTabs.modTab);
 
     // Helper function for registering blocks.
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
