@@ -4,6 +4,7 @@ import net.jacktench.jacksutils.JacksUtils;
 import net.jacktench.jacksutils.item.custom.ItemTinyCoal;
 import net.jacktench.jacksutils.item.custom.ItemTinyCoke;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -17,6 +18,10 @@ public class ModItems {
     // Boring Test Item. Will be deleted soon.
     public static final RegistryObject<Item> testItem = itemRegister.register("testitem",
             () -> new Item(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.junkTab)));
+
+    // Coin
+    public static final RegistryObject<Item> coin = itemRegister.register("coin",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).fireResistant().tab(ModCreativeModeTabs.modTab)));
 
     // Tiny Coal, Charcoal and Coal Coke.
     public static final RegistryObject<Item> tinyCoal = itemRegister.register("tinycoal", () -> new ItemTinyCoal(new Item.Properties().tab(ModCreativeModeTabs.modTab)));
