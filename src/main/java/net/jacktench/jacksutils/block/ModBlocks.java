@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> blockRegister = DeferredRegister.create(ForgeRegistries.BLOCKS, JacksUtils.modid);
 
     // Boring Test Block
-    public static final RegistryObject<Block> testBlock = registerBlock("testblock", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.modTab);
+    public static final RegistryObject<Block> testBlock = registerBlock("testblock", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.junkTab);
 
     // Swift Stone
     public static final RegistryObject<Block> swiftStone = registerBlock("swiftstone", () -> new BlockSwiftStone(BlockBehaviour.Properties.of(Material.STONE).strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTabs.modTab);

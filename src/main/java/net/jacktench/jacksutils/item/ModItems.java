@@ -16,7 +16,7 @@ public class ModItems {
 
     // Boring Test Item. Will be deleted soon.
     public static final RegistryObject<Item> testItem = itemRegister.register("testitem",
-            () -> new Item(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.modTab)));
+            () -> new Item(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.junkTab)));
 
     // Tiny Coal, Charcoal and Coal Coke.
     public static final RegistryObject<Item> tinyCoal = itemRegister.register("tinycoal", () -> new ItemTinyCoal(new Item.Properties().tab(ModCreativeModeTabs.modTab)));
