@@ -9,9 +9,9 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class BlockSpeedStone extends Block {
+public class BlockSwiftStone extends Block {
 
-    public BlockSpeedStone(Properties properties) {
+    public BlockSwiftStone(Properties properties) {
         super(properties);
     }
 

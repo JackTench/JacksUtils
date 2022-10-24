@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "jacksutils:block/speedstone"
+    "all": "jacksutils:block/swiftstone"
   }
 }
