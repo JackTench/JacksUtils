@@ -13,6 +13,7 @@ public class ItemTinyCoal extends Item {
 
     @Override
     public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+        // Burns for 1/8th the time of regular coal.
         return 200;
     }
 
