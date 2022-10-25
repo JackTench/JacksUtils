@@ -1,6 +1,7 @@
 package net.jacktench.jacksutils.item;
 
 import net.jacktench.jacksutils.JacksUtils;
+import net.jacktench.jacksutils.item.custom.ItemFlippableCoin;
 import net.jacktench.jacksutils.item.custom.ItemTinyCoal;
 import net.jacktench.jacksutils.item.custom.ItemTinyCoke;
 import net.minecraft.world.item.Item;
@@ -17,7 +18,7 @@ public class ModItems {
 
     // Coin
     public static final RegistryObject<Item> coin = itemRegister.register("coin",
-            () -> new Item(new Item.Properties().rarity(Rarity.RARE).fireResistant().tab(ModCreativeModeTabs.modTab)));
+            () -> new ItemFlippableCoin(new Item.Properties().rarity(Rarity.RARE).fireResistant().tab(ModCreativeModeTabs.modTab)));
 
     // Tiny Coal, Charcoal and Coal Coke.
     public static final RegistryObject<Item> tinyCoal = itemRegister.register("tinycoal", () -> new ItemTinyCoal(new Item.Properties().tab(ModCreativeModeTabs.modTab)));
